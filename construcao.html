@@ -1,0 +1,50 @@
+<h1>Criação sistema diep</h1>
+
+<h2>Server</h2>
+
+<p>Referência em <a href="https://dev.to/rogeriorioli/iniciando-um-projeto-nodejs-express-com-typescript-4bfl">DEV</a>.</p>
+
+<p>Na pasta server iniciamos o projeto node</p>
+
+<code>yarn init -y</code>
+
+<p>Depois instalamos o express e o seu módulo de tipos</p>
+
+<code>
+  yarn add express
+  yarn add -D @types/express
+</code>
+
+<p>Instalamos o typescript como dependência de desenvolvimento</p>
+
+<code>yarn add -D typescript</code>
+
+<p>Instala o pacote ts-node pra conseguir executar o typescript</p>
+
+<code>yarn add -D ts-node</code>
+
+<p>Criamos o arquivo de configurações do typescript</p>
+
+<code>yarn tsc --init</code>
+
+<p>Depois de configurado o express com typescript vamos instalar as demais dependências do projeto</p>
+
+<code>yarn add bcrypt cookie-parser cors jsonwebtoken mongoose nodemon</code>
+
+<ul>
+  <li>bcrypt = criptografia de senhas</li>
+  <li>cookie-parser = </li>
+  <li>cors = para podermos mandar requisições para o nosso mesmo domínio. Quando lidamos com front e back há conflitos
+    que este módulo trata</li>
+  <li>jsonwebtoken = autenticação de usuários</li>
+  <li>mogoose = acesso ao banco de dados mongo</li>
+  <li>nodemon = servidor que escuta as alterações e reinicia o app a cada salvamento de versão</li>
+</ul>
+
+<p>Desenvolvimento do index, routes e controllers</p>
+
+<p>Criei um projeto no GCP, ativei a api do sheets neste projeto. Criei uma credencial de a partir de chave de api</p>
+
+<p>Instalei o pacote dotenv para conseguir configurar as variáveis de ambiente do projeto</p>
+
+
